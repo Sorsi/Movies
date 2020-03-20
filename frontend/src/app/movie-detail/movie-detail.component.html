@@ -1,0 +1,26 @@
+<div *ngIf="movie">
+    <h2>{{movie.original_title}} Details</h2>
+    <div><span>id: </span>{{movie.id}}</div>
+    <div>
+        <li>
+            <label for="">original title:
+                <input [(ngModel)]="movie.original_title" placeholder="original title">
+            </label>
+        </li>
+        <li>
+            <label for="">hungarian title:
+                <input [(ngModel)]="movie.hungraian_title" placeholder="hungarian title">
+            </label>
+        </li>
+        <li>
+            <label for="">year:
+                <input [(ngModel)]="movie.year" placeholder="year">
+            </label>
+        </li>
+        <li>
+            <label for="">filming locations:
+                <input [(ngModel)]="movie.cities" placeholder="filming locations">
+            </label>
+        </li>
+    </div>
+</div>
